@@ -1,0 +1,46 @@
+<div style="margin-top: -5px;" class="animate__animated animate__fadeIn animate__slow">
+
+    <h1> Redes Sociales más Usadas </h1>
+
+    <hr style="color: #37db8c">
+
+    <div  
+        *ngIf="doughnutChartData.datasets[0].data.length === 0;"
+        class="alert alert-info mb-3 animate__animated animate__fadeIn"
+        id="loading">
+
+        Cargando data...
+    </div>
+
+    <div class="row align-items-center justify-content-center mt-2 mb-2">
+
+        <div class="col-md-2 col-sm-12"></div>
+
+        <div
+            *ngIf="doughnutChartData.datasets[0].data.length > 0;"
+            class="col-md-10 col-sm-12">
+
+            <div class="grafica-dona mb-2">
+
+                <canvas 
+                
+                    baseChart
+                    [data]="doughnutChartData"
+                    [type]="doughnutChartType"
+                >
+                </canvas>
+
+                <hr style="color: transparent">
+
+                <span class="float-end" style="color: #37db8c; display: inline; margin-top: -15px;">
+
+                    Información en billones de usuarios
+    
+                    <span style="color: transparent">--</span>
+                    <br>
+                </span>
+            </div>
+        
+        </div>
+    </div>
+</div>

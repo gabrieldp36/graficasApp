@@ -1,0 +1,31 @@
+<div style="margin-top: -5px;" class="animate__animated animate__fadeIn animate__slow">
+    
+    <div class="graficas" >
+
+        <canvas 
+        
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [type]="barChartType"
+            
+        ></canvas>
+
+    </div>
+
+    <div>
+
+        <button
+
+            [class] = "(linea)
+                        ? 'btn btn-danger boton-linea-doble float-end mt-3' 
+                            : 'btn btn-info boton-barra-doble float-end mt-3' "
+            (click)="actualizar()">
+        
+            Actualizar
+
+        </button>
+
+    </div>
+
+</div>
