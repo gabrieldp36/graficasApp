@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
-import { delay, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +12,8 @@ export class GraficasService {
 
   getUsuariosRedesSociales () {
 
-    return this.http.get('http://localhost:3000/grafica')
+    return this.http.get('https://graficas-app-server.herokuapp.com/grafica')
     .pipe(
-
-      delay(1200),
 
       map( data => {
 
