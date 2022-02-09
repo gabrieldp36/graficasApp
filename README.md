@@ -1,27 +1,29 @@
-# GraficasApp
+# Graficas App.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Esta aplicación permite apreciar la implementación de distintas gráficas (barras, líneas, donas, etc.) en forma responsive.
 
-## Development server
+----La gráfica de dona que trabaja con una petición http, puede demorar unos segundos en cargar, ello hasta que Heroku reactive el servidor que consume la app. Muchas gracias!!----
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Pueden visitar la aplicación haciendo click en el siguiente link: https://hardcore-spence-ace920.netlify.app
 
-## Code scaffolding
+### Notas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este proyecto fue generado con [Angular CLI] versión 13.0.2.
 
-## Build
+Recuerden reconstruir los módulos de Node:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm install
+```
 
-## Running unit tests
+Y luego, para probar la app en desarrollo, ejecuten el siguiente comando:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ng serve -o
+```
 
-## Running end-to-end tests
+Para construir el build, recuerden:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng build --configuration=production
+```
