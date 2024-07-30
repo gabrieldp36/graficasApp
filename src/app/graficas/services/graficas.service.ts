@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { delay, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class GraficasService {
 
     return this.http.get('https://json-server-graficasapp.onrender.com/grafica')
     .pipe(
-
+      delay(800),
       map( data => {
 
         const labels: string[] = Object.keys(data)

@@ -135,5 +135,8 @@ html, body {
     border-radius: 15px;
     color: #024a29;
     height: 40px;
-    line-height: 5px
+    line-height: 5px;
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: center;
 }
