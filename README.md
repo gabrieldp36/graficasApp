@@ -6,7 +6,7 @@ Esta aplicación permite apreciar la implementación de distintas gráficas (bar
 
 ----La gráfica de dona que trabaja con una petición http, puede demorar unos segundos en cargar, ello hasta que Heroku reactive el servidor que consume la app. Muchas gracias!!----
 
-Pueden visitar la aplicación haciendo click en el siguiente link: https://graficas-app-gdp.netlify.app/
+Pueden visitar la aplicación haciendo click en el siguiente link: https://json-server-graficasapp.onrender.com
 
 ### Notas:
 
