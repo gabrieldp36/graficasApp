@@ -12,7 +12,7 @@ export class GraficasService {
 
   getUsuariosRedesSociales () {
 
-    return this.http.get('https://graficas-app-server.herokuapp.com/grafica')
+    return this.http.get('https://json-server-graficasapp.onrender.com/grafica')
     .pipe(
 
       map( data => {
